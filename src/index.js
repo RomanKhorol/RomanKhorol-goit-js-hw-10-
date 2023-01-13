@@ -59,6 +59,8 @@ function renderCoutries(countries) {
     });
     refs.oneCountry.innerHTML = item;
   } else {
+    refs.countryList.style.display = 'none';
+    refs.oneCountry.style.display = 'none';
     Notiflix.Notify.warning(`Oops, there is no country with that name`);
   }
 }
